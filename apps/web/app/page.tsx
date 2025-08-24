@@ -5,6 +5,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Badge } from "@/components/ui/badge"
 import { Zap, Users, Trophy, Play, Gamepad2, MessageSquare, Crown, Star, Github, Heart } from "lucide-react"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export default function Home() {
   const [timer, setTimer] = useState(6)
@@ -97,13 +98,14 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <Button
+
+              <Link href='/game'><Button
                 size="lg"
                 className="text-lg px-16 py-8 bg-primary text-primary-foreground hover:bg-primary/90 font-semibold hover-lift animate-pulse-glow"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Start Playing
-              </Button>
+              </Button></Link>
               <Button
                 variant="outline"
                 size="lg"
@@ -172,7 +174,7 @@ export default function Home() {
                       <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
                         <span className="text-xs">🍌</span>
                       </div>
-                      <span className="font-medium text-white">banana</span>
+                      <span className="font-medium text-white">mc adams</span>
                       <div className="flex space-x-1">
                         <Heart className="h-6 w-6 text-red-500 fill-red-500" />
                         <Heart className="h-6 w-6 text-red-500 fill-red-500" />
@@ -183,7 +185,7 @@ export default function Home() {
                       <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
                         <span className="text-xs">🌌</span>
                       </div>
-                      <span className="font-medium text-white">next universe</span>
+                      <span className="font-medium text-white">rishabh</span>
                       <div className="flex space-x-1">
                         <Heart className="h-6 w-6 text-red-500 fill-red-500" />
                         <Heart className="h-6 w-6 text-red-500 fill-red-500" />
