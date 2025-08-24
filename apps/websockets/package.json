@@ -3,11 +3,14 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun src/index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5",
+    "typescript": "^5.9.2",
     "@repo/typescript-config": "workspace:*"
   },
   "dependencies": {
